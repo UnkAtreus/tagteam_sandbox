@@ -6,14 +6,12 @@ import {
 export const ContainerStyle = styled.div`
   /* Parent styles
   ------------------------------- */
-  display: flex;
+  display: block;
   width: 100%;
-  max-width: ${VARIABLES.BREAKPOINTS.TABLET_LG};
+  max-width: ${VARIABLES.BREAKPOINTS.DESKTOP_MD};
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  flex-wrap: wrap;
-
   /* Child element styles
   ------------------------------- */
 

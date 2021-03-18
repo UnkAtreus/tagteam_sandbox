@@ -1,6 +1,7 @@
 export default {
   FONT_FAMILIES: {
-    FIRST:  'Prompt',
+    FIRST: 'Kanit',
+    SECONED: 'Prompt',
   },
   FONT_SIZES_PX: {
     MN: '10px',
