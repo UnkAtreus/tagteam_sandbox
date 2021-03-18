@@ -1,0 +1,21 @@
+{
+  "main.js": "/tagteam_sandbox/static/js/main.61a20a5a.chunk.js",
+  "main.js.map": "/tagteam_sandbox/static/js/main.61a20a5a.chunk.js.map",
+  "runtime~main.js": "/tagteam_sandbox/static/js/runtime~main.670690a4.js",
+  "runtime~main.js.map": "/tagteam_sandbox/static/js/runtime~main.670690a4.js.map",
+  "static/css/2.0011913d.chunk.css": "/tagteam_sandbox/static/css/2.0011913d.chunk.css",
+  "static/js/2.9b872c67.chunk.js": "/tagteam_sandbox/static/js/2.9b872c67.chunk.js",
+  "static/js/2.9b872c67.chunk.js.map": "/tagteam_sandbox/static/js/2.9b872c67.chunk.js.map",
+  "index.html": "/tagteam_sandbox/index.html",
+  "precache-manifest.e8176647119377fb0b2c892ef1f58958.js": "/tagteam_sandbox/precache-manifest.e8176647119377fb0b2c892ef1f58958.js",
+  "service-worker.js": "/tagteam_sandbox/service-worker.js",
+  "static/css/2.0011913d.chunk.css.map": "/tagteam_sandbox/static/css/2.0011913d.chunk.css.map",
+  "static/media/sample-audio.mp3": "/tagteam_sandbox/static/media/sample-audio.0eb3f36b.mp3",
+  "static/media/sample-content.jpg": "/tagteam_sandbox/static/media/sample-content.751572cd.jpg",
+  "static/media/sample-document.pdf": "/tagteam_sandbox/static/media/sample-document.ce355ba2.pdf",
+  "static/media/sample-icon.svg": "/tagteam_sandbox/static/media/sample-icon.0992c2a1.svg",
+  "static/media/sample-logo.svg": "/tagteam_sandbox/static/media/sample-logo.0d3f391f.svg",
+  "static/media/sample-logo.png": "/tagteam_sandbox/static/media/sample-logo.97839c89.png",
+  "static/media/sample-video.mp4": "/tagteam_sandbox/static/media/sample-video.667bc1fa.mp4",
+  "static/media/slick-theme.css": "/tagteam_sandbox/static/media/slick.f97e3bbf.svg"
+}
