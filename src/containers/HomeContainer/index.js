@@ -18,12 +18,12 @@ const HomeContainer = () => {
             <div className="nav">
               <div className="nav-logo"></div>
               <div className="nav-row">
-                <div className="nav-content">Home</div>
+                <div className="nav-content"><Link to="/">Home</Link></div>
                 <div className="nav-content">
                   <Link to="/contest">Join</Link>
                 </div>
-                <div className="nav-content">Skill up</div>
-                <div className="nav-content">Blog</div>
+                <div className="nav-content"><Link to="/">Skill Up</Link></div>
+                <div className="nav-content"><Link to="/">Blog</Link></div>
               </div>
             </div>
 
@@ -35,7 +35,8 @@ const HomeContainer = () => {
                   <div className="label thrid">งั้นก็มาร่วมกับเราสิ!</div>
                 </div>
                 <div className="login-btn-container">
-                  <button className="btn-login">เข้าสู่ระบบ</button>
+                  <button className="btn-login">
+                    <Link to="/">เข้าสู่ระบบ</Link></button>
                 </div>
               </div>
               <div className="potlet-logo"></div>
@@ -62,7 +63,11 @@ const HomeContainer = () => {
                         แล้วร่วมกันบุกตะลุยไปในสังเวียนการแข่งขัน Start up
                       </div>
                       <div className="silder-btn">
-                        <div className="btn-info">ดูรายละเอียด</div>
+                        <Link to="/contest">
+                          <div className="btn-info">
+                            ดูรายละเอียด
+                        </div>
+                        </Link>
                       </div>
                     </div>
                     <div className="slider-left">
@@ -76,7 +81,11 @@ const HomeContainer = () => {
                         โดยติวเตอร์ชื่อดังบนแพลตฟอร์มของเรา
                       </div>
                       <div className="silder-btn">
-                        <div className="btn-info">ดูรายละเอียด</div>
+                        <Link to="/contest">
+                          <div className="btn-info">
+                            ดูรายละเอียด
+                        </div>
+                        </Link>
                       </div>
                     </div>
                     <div className="slider-left">
@@ -90,7 +99,11 @@ const HomeContainer = () => {
                         ลงบนบล็อกของพวกเรา
                       </div>
                       <div className="silder-btn">
-                        <div className="btn-info">ดูรายละเอียด</div>
+                        <Link to="/contest">
+                          <div className="btn-info">
+                            ดูรายละเอียด
+                        </div>
+                        </Link>
                       </div>
                     </div>
                   </Slider>
@@ -148,7 +161,7 @@ const HomeContainer = () => {
         <Container className="Team">
           <div className="potlet-row header">
             <div className="potlet-header">พวกเขาต้องการคุณ!</div>
-            <div className="potlet-link">เข้าสู่ระบบ</div>
+            <div className="potlet-link"><Link to="/">เข้าสู่ระบบ</Link></div>
           </div>
           <TeamStyled>
             <div className="team-card-container">
@@ -169,6 +182,7 @@ const HomeContainer = () => {
                 roleName={"PM"}
                 status={"หาทีม"}
                 statusCount={1}
+                inviteButton={false}
               />
               <CardTeam
                 className={"test"}
@@ -178,6 +192,7 @@ const HomeContainer = () => {
                 roleName={"PM"}
                 status={"หาทีม"}
                 statusCount={1}
+                inviteButton={false}
               />
               <CardTeam
                 className={"test"}
@@ -187,12 +202,13 @@ const HomeContainer = () => {
                 roleName={"PM"}
                 status={"หาทีม"}
                 statusCount={1}
+                inviteButton={false}
               />
             </div>
           </TeamStyled>
           <div className="potlet-row header">
             <div className="potlet-header">คอร์สออนไลน์</div>
-            <div className="potlet-link">ดูคอร์สออนไลน์ทั้งหมด</div>
+            <div className="potlet-link"><Link to="/">ดูคอร์สออนไลน์ทั้งหมด</Link></div>
           </div>
           <CourseStyled>
             <CardCourse
@@ -228,7 +244,7 @@ const HomeContainer = () => {
           </CourseStyled>
           <div className="potlet-row header">
             <div className="potlet-header">บล็อกมาแรง</div>
-            <div className="potlet-link">ดูบล็อกทั้งหมด</div>
+            <div className="potlet-link"><Link to="/">ดูบล็อกทั้งหมด</Link></div>
           </div>
           <BlogStyled>
             <CardBlog
@@ -301,7 +317,7 @@ const HomeContainer = () => {
           </BlogStyled> */}
         </Container>
       </HomeStyled>
-    </React.Fragment>
+    </React.Fragment >
   );
 };
 

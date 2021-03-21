@@ -59,6 +59,37 @@ export const CardTeamStyle = styled.div`
     color: #ffffff;
   }
 
+  .btn-invite {
+    width: 64px;
+    height: 16px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.TN};
+    background-color: #54BA5E;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+  .btn-attend {
+    width: 64px;
+    height: 16px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.TN};
+    background-color: #FC5336;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+
   
 
   /* Modifiers

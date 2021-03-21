@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
+import { NavLink } from 'react-router-dom'
 import { ContestStyled, CardContestStyled } from "./styled";
 import { Container, CardContest } from "../../components";
 import Slider from "react-slick";
@@ -47,14 +48,6 @@ function SamplePrevArrow(props) {
 }
 
 const ContestContainer = () => {
-  const posts = [
-    { id: "1", name: "user1" },
-    { id: "2", name: "user2" },
-    { id: "3", name: "user3" },
-    { id: "4", name: "user4" },
-    { id: "5", name: "user5" },
-    { id: "6", name: "user6" },
-  ]
 
   const ContentProps = [
     {
@@ -202,16 +195,25 @@ const ContestContainer = () => {
         </div>
         <div className="nav-row menu">
           <div className="nav-icon">
-            <FontAwesomeIcon icon={faHome} style={{ fontSize: "32px" }} />
+            <NavLink to="/" >
+              <FontAwesomeIcon icon={faHome} style={{ fontSize: "32px" }} />
+            </NavLink>
+          </div>
+
+          <div className="nav-icon">
+            <NavLink to="/contest" >
+              <FontAwesomeIcon icon={faHandshake} style={{ fontSize: "32px" }} />
+            </NavLink>
           </div>
           <div className="nav-icon">
-            <FontAwesomeIcon icon={faHandshake} style={{ fontSize: "32px" }} />
+            <NavLink to="/" >
+              <FontAwesomeIcon icon={faStore} style={{ fontSize: "32px" }} />
+            </NavLink>
           </div>
           <div className="nav-icon">
-            <FontAwesomeIcon icon={faStore} style={{ fontSize: "32px" }} />
-          </div>
-          <div className="nav-icon">
-            <FontAwesomeIcon icon={faBloggerB} style={{ fontSize: "32px" }} />
+            <NavLink to="/" >
+              <FontAwesomeIcon icon={faBloggerB} style={{ fontSize: "32px" }} />
+            </NavLink>
           </div>
         </div>
         <Container>
@@ -332,7 +334,7 @@ const ContestContainer = () => {
                   tag={["ธุรกิจ", "ปริญญาตรี", "contest"]}
                   dueDate={false}
                 /> */}
-                <Pagination className="Paginate" defaultCurrent={1} onChange={paginate} total={posts.length} defaultPageSize={postsPerPage} />
+                <Pagination className="Paginate" defaultCurrent={1} onChange={paginate} total={ContentProps.length} defaultPageSize={postsPerPage} />
               </CardContestStyled>
               <div className="potlet-column">
                 <img src="images/banner_6.png" alt="" />

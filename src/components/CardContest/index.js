@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import ClassNames from "classnames";
 import PropTypes from "prop-types";
 import { CardContestStyle } from "./styled";
@@ -94,8 +95,12 @@ export const CardContest = ({
           </div>
           {dueDate ? (
             <div className="card-row row-btn">
-              <div className="btn-apply">Apply</div>
-              <div className="btn-tagteam">tagteam</div>
+              <NavLink to="/join">
+                <div className="btn-apply">Apply</div>
+              </NavLink>
+              <NavLink to="/join">
+                <div className="btn-tagteam">Tagteam</div>
+              </NavLink>
             </div>
           ) : (
             <div className="card-row row-btn">

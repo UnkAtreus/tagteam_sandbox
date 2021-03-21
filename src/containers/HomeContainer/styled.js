@@ -1,10 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 // import {
 //   default as VARIABLES
 // } from '../../themes/styles/variables'
-import {
-  default as TYPOGRAPHYS
-} from '../../themes/styles/variables/typographys'
+import { default as TYPOGRAPHYS } from "../../themes/styles/variables/typographys";
 // import {
 //   default as MIXINS
 // } from '../../themes/styles/helpers/mixins'
@@ -18,12 +16,10 @@ export const HomeStyled = styled.div`
   /* Parent styles
   ------------------------------- */
   font-family: ${TYPOGRAPHYS.FONT_FAMILIES.FIRST};
-  background-color: #F4F8FB;
-  
+  background-color: #f4f8fb;
 
   /* Child element styles
   ------------------------------- */
-
 
   .potlet-bg {
     display: flex;
@@ -31,7 +27,7 @@ export const HomeStyled = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('images/canvas_bg_2008_new.jpg');
+    background-image: url("images/canvas_bg_2008_new.jpg");
     height: 1500px;
     width: 100%;
     margin: auto;
@@ -44,13 +40,13 @@ export const HomeStyled = styled.div`
   }
 
   .nav-logo {
-    background: url('images/tagteam_logo_1024_white.png'), #31384B;
+    background: url("images/tagteam_logo_1024_white.png"), #31384b;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 50%;
     width: 64px;
-    height: 64px; 
+    height: 64px;
   }
 
   .nav-row {
@@ -63,9 +59,20 @@ export const HomeStyled = styled.div`
     font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.MD};
     font-weight: bold;
     margin: 0 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     font-family: ${TYPOGRAPHYS.FONT_FAMILIES.FIRST};
+
+    a {
+      color: #f4f8fb;
+      text-decoration: none;
+      background-color: transparent;
+      outline: none;
+      cursor: pointer;
+    }
+    a:hover {
+      color: #ffffff;
+    }
   }
 
   .potlet-row {
@@ -80,19 +87,23 @@ export const HomeStyled = styled.div`
   }
 
   .btn-login {
-    background-color: #ffffff;
+    background-color: #f4f8fb;
     border-radius: 30px;
-    border-color: transparent;;
+    border-color: transparent;
     height: 64px;
     width: 216px;
     padding: 8px;
     font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.XL};
     font-weight: bold;
-    color: #31384B;
+    color: #31384b;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    a {
+      color: #31384b;
+    }
   }
 
   .login-btn-container {
@@ -102,7 +113,7 @@ export const HomeStyled = styled.div`
   }
 
   .potlet-logo {
-    background: url('images/tagteam_logo_1024_white.png'), #31384B;
+    background: url("images/tagteam_logo_1024_white.png"), #31384b;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -120,12 +131,12 @@ export const HomeStyled = styled.div`
       line-height: 115%;
       &.first {
         font-size: 48px;
-        color: #31384B;
+        color: #31384b;
       }
 
       &.second {
         font-size: 96px;
-        color: #31384B;
+        color: #31384b;
       }
 
       &.thrid {
@@ -161,7 +172,7 @@ export const HomeStyled = styled.div`
 
   li.slick-active {
     background-color: #fc533612;
-    border-bottom: 1px #FC5336 solid;
+    border-bottom: 1px #fc5336 solid;
   }
 
   .slider-pic {
@@ -177,7 +188,7 @@ export const HomeStyled = styled.div`
 
     .slider-content-header {
       font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.BG};
-      color: #FC5336;
+      color: #fc5336;
       line-height: 150%;
       margin-top: 24px;
     }
@@ -186,27 +197,30 @@ export const HomeStyled = styled.div`
       margin-top: 16px;
       color: #ffffff;
       font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.MD};
-
     }
     .silder-btn {
       display: flex;
       justify-content: center;
-    .btn-info {
-      margin-top: 64px;
-      background-color: #FC5336;
-      border-radius: 60px;
-      border-color: transparent;;
-      height: 64px;
-      width: 216px;
-      padding: 8px;
-      font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.MD};
-      font-weight: bold;
-      color: #FFFFFF;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
+      .btn-info {
+        margin-top: 64px;
+        background-color: #fc5336;
+        border-radius: 60px;
+        border-color: transparent;
+        height: 64px;
+        width: 216px;
+        padding: 8px;
+        font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.MD};
+        font-weight: bold;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        a {
+          color: #ffffff;
+        }
+      }
     }
   }
 
@@ -225,18 +239,24 @@ export const HomeStyled = styled.div`
   .potlet-link {
     font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.LG};
     font-weight: bold;
-    color: #FC5336;
+    color: #fc5336;
     text-decoration-line: underline;
     cursor: pointer;
+
+    a {
+      color: #fc5336;
+    }
+    a:hover {
+      color: #fa3d1b;
+    }
   }
 
   /* Modifiers
   ------------------------------- */
 
-
   /* Media queries
   ------------------------------- */
-`
+`;
 
 export const TeamStyled = styled.div`
   /* Parent styles
@@ -257,10 +277,9 @@ export const TeamStyled = styled.div`
   /* Modifiers
   ------------------------------- */
 
-
   /* Media queries
-  ------------------------------- */  
-`
+  ------------------------------- */
+`;
 
 export const CourseStyled = styled.div`
   /* Parent styles
@@ -275,10 +294,9 @@ export const CourseStyled = styled.div`
   /* Modifiers
   ------------------------------- */
 
-
   /* Media queries
   ------------------------------- */
-`
+`;
 
 export const BlogStyled = styled.div`
   /* Parent styles
@@ -292,12 +310,9 @@ export const BlogStyled = styled.div`
   /* Child element styles
   ------------------------------- */
 
-
   /* Modifiers
   ------------------------------- */
 
-
   /* Media queries
-  ------------------------------- */  
-`
-
+  ------------------------------- */
+`;

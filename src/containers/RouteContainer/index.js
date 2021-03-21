@@ -13,6 +13,7 @@ import {
 } from '../../containers'
 import HomeContainer from "../HomeContainer"
 import ContestContainer from "../ContestContainer"
+import ContestDetailContainer from "../ContestDetailContainer"
 import {
   ROUTE_PATH,
 } from 'helpers'
@@ -31,7 +32,7 @@ export class RouteApp extends React.Component {
         {/* Use props 'exact' for match single container(not share container) */}
         <Switch>
           <Route exact path={ROUTE_PATH.CONTEST.LINK} component={ContestContainer} />
-          <Route exact path={ROUTE_PATH.JOIN.LINK} component={HomeContainer} />
+          <Route exact path={ROUTE_PATH.JOIN.LINK} component={ContestDetailContainer} />
           <Route path={ROUTE_PATH.HOME.LINK} component={HomeContainer} />
         </Switch>
       </MainLayoutContainer>

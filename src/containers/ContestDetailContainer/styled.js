@@ -144,6 +144,7 @@ export const ContestStyled = styled.div`
       width: 234px;
     }
   }
+
   a {
     color: #ffffff;
     text-decoration: none;
@@ -161,7 +162,6 @@ export const ContestStyled = styled.div`
   a:active {
     color: #ffffff;
   }
-
   /* Modifiers
   ------------------------------- */
   .ant-pagination-item {

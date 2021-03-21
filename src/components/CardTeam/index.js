@@ -11,6 +11,8 @@ export const CardTeam = ({
   roleName,
   status,
   statusCount,
+  inviteButton = false,
+  buttonStatus,
 }) => {
   return (
     <CardTeamStyle className={ClassNames("card", className)}>
@@ -28,6 +30,11 @@ export const CardTeam = ({
           <div className="card-status-container">
             <div className="card-label status">{status}</div>
             <div className="card-label status-count">{statusCount} member</div>
+            {inviteButton && buttonStatus === "invite" ? (
+              <div className="btn-invite">invite</div>
+            ) : (
+              <div className="btn-attend">attend</div>
+            )}
           </div>
         </div>
       </div>
