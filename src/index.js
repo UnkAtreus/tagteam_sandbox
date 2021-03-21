@@ -5,6 +5,7 @@ import 'themes/styles/helpers/scaffolding'
 import 'themes/styles/global'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import 'antd/dist/antd.css';
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 

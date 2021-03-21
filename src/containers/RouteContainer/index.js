@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Route
+  Route, Switch
 } from 'react-router-dom'
 import {
   connect,
@@ -12,6 +12,7 @@ import {
   MainLayoutContainer,
 } from '../../containers'
 import HomeContainer from "../HomeContainer"
+import ContestContainer from "../ContestContainer"
 import {
   ROUTE_PATH,
 } from 'helpers'
@@ -28,7 +29,11 @@ export class RouteApp extends React.Component {
     return (
       <MainLayoutContainer>
         {/* Use props 'exact' for match single container(not share container) */}
-        <Route exact path={ROUTE_PATH.HOME.LINK} component={HomeContainer} />
+        <Switch>
+          <Route exact path={ROUTE_PATH.CONTEST.LINK} component={ContestContainer} />
+          <Route exact path={ROUTE_PATH.JOIN.LINK} component={HomeContainer} />
+          <Route path={ROUTE_PATH.HOME.LINK} component={HomeContainer} />
+        </Switch>
       </MainLayoutContainer>
     )
   }

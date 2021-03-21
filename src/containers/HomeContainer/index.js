@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 import { HomeStyled, TeamStyled, CourseStyled, BlogStyled } from "./styled";
 import { Container, CardTeam, CardCourse, CardBlog } from "../../components";
 import Slider from "react-slick";
@@ -18,7 +19,9 @@ const HomeContainer = () => {
               <div className="nav-logo"></div>
               <div className="nav-row">
                 <div className="nav-content">Home</div>
-                <div className="nav-content">Join</div>
+                <div className="nav-content">
+                  <Link to="/contest">Join</Link>
+                </div>
                 <div className="nav-content">Skill up</div>
                 <div className="nav-content">Blog</div>
               </div>
@@ -78,7 +81,7 @@ const HomeContainer = () => {
                     </div>
                     <div className="slider-left">
                       <div className="slider-content-header">
-                        เรีัยนรู้ผ่าน
+                        เรียนรู้ผ่าน
                         <br />
                         มุมมองของผู้อื่น
                       </div>
@@ -118,7 +121,7 @@ const HomeContainer = () => {
                         style={{
                           width: "auto",
                           color: "#FC5336",
-                          fontSize: "36px",
+                          fontSize: "32px",
                           fontWeight: "bold",
                         }}
                       >
@@ -149,7 +152,7 @@ const HomeContainer = () => {
           </div>
           <TeamStyled>
             <div className="team-card-container">
-              <CardTeam
+              {/* <CardTeam
                 className={"test"}
                 pic={"images/card_team_1.png"}
                 name={"แอมสวยมาก"}
@@ -157,7 +160,7 @@ const HomeContainer = () => {
                 roleName={"PM"}
                 status={"หาทีม"}
                 statusCount={1}
-              />
+              /> */}
               <CardTeam
                 className={"test"}
                 pic={"images/card_team_2.png"}
@@ -237,7 +240,6 @@ const HomeContainer = () => {
               review={"20"}
               star={5}
             />
-            <div className="line-vertical" />
             <CardBlog
               className={"test"}
               pic={"images/card_blog_2.png"}
@@ -249,8 +251,30 @@ const HomeContainer = () => {
               review={"10"}
               star={4}
             />
+            <CardBlog
+              className={"test"}
+              pic={"images/card_blog_3.png"}
+              title={"Review Hackathon 2018"}
+              name={"จุทามาศ แก้วเมขลา"}
+              description={
+                "  วันนี้จะมารีวิวความรู้และความรู้สึกจากการร่วมกิจกรรม hackathon นะคะ -w-"
+              }
+              review={"5"}
+              star={4}
+            />
+            <CardBlog
+              className={"test"}
+              pic={"images/card_blog_4.png"}
+              title={"การเขียนบทความวิจัยทางการพยาบาล"}
+              name={"ปรินทร์ จันทร์ทองสุข"}
+              description={
+                "การเขียนบทความวิจัยทางการพยาบาล เพื่อการเผยแพร่ในระดับนานาชาติ"
+              }
+              review={"2"}
+              star={5}
+            />
           </BlogStyled>
-          <BlogStyled>
+          {/* <BlogStyled>
             <CardBlog
               className={"test"}
               pic={"images/card_blog_3.png"}
@@ -274,7 +298,7 @@ const HomeContainer = () => {
               review={"2"}
               star={5}
             />
-          </BlogStyled>
+          </BlogStyled> */}
         </Container>
       </HomeStyled>
     </React.Fragment>

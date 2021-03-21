@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import {
   default as VARIABLES
 } from '../../themes/styles/variables'
+import {
+  default as TYPOGRAPHYS
+} from '../../themes/styles/variables/typographys'
 
 // Wrapper
 // ============================================================
@@ -45,12 +48,12 @@ export const CardCourseStyle = styled.div`
     display: block;
     background-color: #424242;
     padding: 16px;
-    width: 384px;
+    width: 304px;
 
   }
 
   .card-label{
-    font-size: 16px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.XXS};
     font-weight: 500;
     letter-spacing: 1px;
     color: #ffffff;
@@ -60,7 +63,7 @@ export const CardCourseStyle = styled.div`
     }
   }
   .card-header {
-    font-size: 24px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.MD};
     font-weight: bold;
     letter-spacing: 1px;
     color: #ffffff;

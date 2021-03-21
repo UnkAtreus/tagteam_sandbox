@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import {
   default as VARIABLES
 } from '../../themes/styles/variables'
+import {
+  default as TYPOGRAPHYS
+} from '../../themes/styles/variables/typographys'
 
 // Wrapper
 // ============================================================
@@ -50,7 +53,7 @@ export const CardTeamStyle = styled.div`
   }
 
   .card-label{
-    font-size: 16px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.XXS};
     font-weight: bold;
     letter-spacing: 1px;
     color: #ffffff;

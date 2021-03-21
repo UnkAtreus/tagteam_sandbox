@@ -17,6 +17,9 @@
 // ============================================================
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+
 /* Regular */
 @font-face {
   font-family: 'Prompt';
@@ -56,7 +59,7 @@
 
 /* Light */
 @font-face {
-  font-family: 'Prompt';
+  font-family: 'Kanit';
   src: url('../fonts/kanit/Kanit-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
@@ -64,7 +67,7 @@
 
 /* Regular */
 @font-face {
-  font-family: 'Prompt';
+  font-family: 'Kanit';
   src: url('../fonts/kanit/Kanit-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -72,7 +75,7 @@
 
 /* Medium */
 @font-face {
-  font-family: 'Prompt';
+  font-family: 'Kanit';
   src: url('../fonts/kanit/Kanit-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
@@ -80,7 +83,7 @@
 
 /* Bold */
 @font-face {
-  font-family: 'Prompt';
+  font-family: 'Kanit';
   src: url('../fonts/kanit/Kanit-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;

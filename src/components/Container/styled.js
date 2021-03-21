@@ -8,7 +8,7 @@ export const ContainerStyle = styled.div`
   ------------------------------- */
   display: block;
   width: 100%;
-  max-width: ${VARIABLES.BREAKPOINTS.DESKTOP_MD};
+  max-width: ${VARIABLES.BREAKPOINTS.TABLET_LG};
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

@@ -2,6 +2,9 @@ import styled from 'styled-components'
 import {
   default as VARIABLES
 } from '../../themes/styles/variables'
+import {
+  default as TYPOGRAPHYS
+} from '../../themes/styles/variables/typographys'
 
 // Wrapper
 // ============================================================
@@ -10,15 +13,15 @@ export const CardBlogStyle = styled.div`
   ------------------------------- */
   display: block;
   width: 630px;
-  height: 216px;
+  height: 196px;
   cursor: pointer;
 
   /* Child element styles
   ------------------------------- */
 
   .card-pic {
-    height: 152px;
-    width: 152px;
+    height: 128px;
+    width: 128px;
     border-radius: 25px;
     background-color:#424242;
     background: url('images/card_team_2.png');
@@ -45,7 +48,7 @@ export const CardBlogStyle = styled.div`
   }
 
   .card-label{
-    font-size: 16px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.XXS};
     font-weight: 500;
     letter-spacing: 1px;
     color: #424242;
@@ -54,11 +57,11 @@ export const CardBlogStyle = styled.div`
       margin-left: 8px;
     }
     &.description {
-      height: 96px;
+      height: 85px;
     }
   }
   .card-header {
-    font-size: 24px;
+    font-size: ${TYPOGRAPHYS.FONT_SIZES_PX.MD};
     font-weight: bold;
     letter-spacing: 1px;
     color: #424242;
